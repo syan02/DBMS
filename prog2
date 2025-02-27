@@ -1,0 +1,31 @@
+INSERT INTO BOOK VALUES('&BOOK_ID', '&Title', '&Publisher_Name', '&Pub_year');
+   BOOK_ID TITLE                PUB_YEAR             PUBLISHER_NAME
+---------- -------------------- -------------------- --------------------
+         1 DBMS                 JAN-2017             farzan
+         2 ADBMS                JAN-2016             suman
+         3 CN                   SEP-2016             teja
+         4 CS                   SEP-2015             ali
+         5 OS                   MAY-2016             md
+
+
+INSERT INTO BOOK_AUTHOR('&BOOK_ID', '&Author_Name');
+BOOK_ID    AUTHOR_NAM
+---------- ----------
+1          NAVATHE
+2          NAVATHE
+3          TANENBAUM
+5          GALVIN
+
+
+
+INSERT INTO BOOK_COPIES VALUES('&NO_OF_COPIES', '&BOOK_ID', '&BRANCH_ID');
+NO_OF_COPIES    BOOK_ID  BRANCH_ID
+------------ ---------- ----------
+          10          1         10
+           5          1         11
+           2          2         12
+           5          2         13
+           7          3         14
+           1          5         10
+           3          4         11
+7 rows selected.
